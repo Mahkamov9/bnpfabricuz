@@ -1,9 +1,26 @@
 import React from "react"
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Collection from "./Pages/Collection/Collection";
+import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
+import HomePage from "./Pages/HomePage/HomePage";
+import About from "./Pages/About/About";
+import Contact from "./Pages/Contact/Contact";
+
 
 function App() {
-  return(
+  return (
     <>
-      <h1>BUKHARA NATURAL PRODUCT</h1>
+      <Router>
+        <Navbar/>
+          <Routes>
+            <Route path="/" element={<HomePage/>}/>
+            <Route path="/collection" element={<Collection/>} />
+            <Route path="/about" element={<About/>}/>
+            <Route path="/contact" element={<Contact/>}/>
+          </Routes>
+        <Footer/>
+      </Router>
     </>
   )
 }
