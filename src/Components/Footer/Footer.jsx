@@ -5,8 +5,10 @@ import "./Footer.css"
 export default function Footer() {
   return (
     <>
-      <footer style={{ padding: '10px', background: '#333', color: '#fff', textAlign: 'center' }}>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
+      <footer>
+        <div className="container">
+          <h4>Footer</h4>
+        </div>
       </footer>
     </>
   )
