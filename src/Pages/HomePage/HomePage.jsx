@@ -18,7 +18,6 @@ export default function HomePage() {
                 <p>{t("buxoro")}</p>
                 <p>{t("tabiy")}</p>
                 <p>{t("product")}</p>
-                <p>{t("product")}</p>
               </div>
             </div>
           </div>
