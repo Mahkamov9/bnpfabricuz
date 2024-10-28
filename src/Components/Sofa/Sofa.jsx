@@ -1,22 +1,24 @@
 import React from 'react'
 import "./Sofa.css";
+import { useTranslation } from 'react-i18next';
 
-import SofaImg from "../../assets/Images/sofa.png";
 
 
-export default function Sofa() {
+
+export default function Sofa(props) {
+  const { t, i18n } = useTranslation()
   return (
     <>
-      <div className="sofa_box">
+      <div style={{background :`${props.sofaColor}`}} className="sofa_box">
         <div className="sofa_content">
           <h3>100%</h3>
-          <h4>Materialning sifati</h4>
+          <h4>{t("sofatext1")}</h4>
         </div>
-        <img src={SofaImg} alt="Mahkmov"/>
+        <img className='sofa_img' src={props.sofa_img} alt="Mahkmov"/>
         <div className="sofa_content">
-          <h4>"Buxoro tabiiy mahsuloti"</h4>
-          <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, ducimus?</h4>
-          <button>To'plam</button>
+          <h4>"{t("sofatext2")}"</h4>
+          <h4>{t("sofatext3")}</h4>
+          <button>{t("sofabtn")}</button>
         </div>
       </div>
 

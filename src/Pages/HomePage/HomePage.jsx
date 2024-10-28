@@ -9,6 +9,10 @@ import Delivery2 from "../../assets/Images/noun_guarantee.svg";
 import Delivery3 from "../../assets/Images/Group-995.svg";
 import Delivery4 from "../../assets/Images/noun_Wallet_745515.svg";
 import Sofa from '../../Components/Sofa/Sofa';
+import SofaImg from "../../assets/Images/sofa.png";
+import SofaImg1 from "../../assets/Images/sofa1.png";
+import SofaImg2 from "../../assets/Images/sofa2.png";
+
 
 export default function HomePage() {
 
@@ -42,7 +46,9 @@ export default function HomePage() {
       <section>
         <div className="sofaSection">
           <div className="container">
-            <Sofa />
+            <Sofa  sofa_img={SofaImg1} sofaColor="linear-gradient(90turn, #373E53, #616884)" />
+            <Sofa  sofa_img={SofaImg} sofaColor="linear-gradient(90turn, #332A4F, #625686)" />
+            <Sofa  sofa_img={SofaImg2} sofaColor="linear-gradient(90turn, #255957, #307E7A)" />
           </div>
         </div>
       </section>

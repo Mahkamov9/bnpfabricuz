@@ -1,13 +1,468 @@
 
 .sofa_box{
   width: 100%;
-  background: linear-gradient(90turn,#332A4F, #625686);
+  /* background: ; */
   border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  margin-top: 15%;
+  margin-bottom: 15%;
 }
 
 
-.sofa_content{
-  display: flex;
-  justify-content: space-between;
-  
+.sofa_img{
+  position: absolute;
+  width: 1000px;
+  transform: translate(15%, 0%);
+}
+
+.sofa_content:first-child{
+  margin: 8rem 0rem;
+  margin-left: 4rem;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+
+.sofa_content:first-child h3{
+  font-size: 90px;
+}
+
+.sofa_content:last-child{
+  color: #fff;
+  text-align: start;
+  /* font-size: 40px; */
+  width: 450px;
+  margin: 0rem 4rem;
+}
+
+.sofa_content:last-child h4{
+  margin: 2rem 0;
+  font-size: 25px;
+}
+
+.sofa_content:last-child h4:nth-child(2){
+  font-size: 20px;
+  font-weight: 300;
+}
+
+
+.sofa_content:last-child button{
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 15px 30px;
+  color: #332A4F;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+
+@media(max-width: 1220px){
+  .sofa_box{
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 20%;
+    margin-bottom: 15%;
+  }
+  .sofa_img{
+    position: absolute;
+    width: 900px;
+    transform: translate(8%, -5%);
+  }
+  .sofa_content:first-child{
+    margin: 8rem 0rem;
+    margin-left: 1rem;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .sofa_content:first-child h3{
+    font-size: 80px;
+  }
+  .sofa_content:last-child{
+    color: #fff;
+    text-align: start;
+    width: 350px;
+    margin: 0rem 0rem;
+  }
+
+  .sofa_content:last-child h4{
+    margin: 2rem 0;
+    font-size: 25px;
+  }
+
+  .sofa_content:last-child h4:nth-child(2){
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+}
+
+
+@media(max-width: 1120px){
+  .sofa_box{
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 20%;
+    margin-bottom: 15%;
+    z-index: 1;
+  }
+  .sofa_img{
+    position: absolute;
+    width: 700px;
+    transform: translate(20%, -12%);
+    z-index: -1;
+  }
+  .sofa_content:first-child{
+    margin: 8rem 0rem;
+    margin-left: 1rem;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .sofa_content:first-child h3{
+    font-size: 80px;
+  }
+  .sofa_content:last-child{
+    color: #fff;
+    text-align: start;
+    width: 350px;
+    margin: 0rem 1rem;
+  }
+
+  .sofa_content:last-child h4{
+    margin: 2rem 0;
+    font-size: 25px;
+  }
+
+  .sofa_content:last-child h4:nth-child(2){
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+}
+
+@media(max-width: 920px){
+  .sofa_box{
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 25%;
+    margin-bottom: 15%;
+    z-index: 1;
+  }
+  .sofa_img{
+    position: absolute;
+    width: 700px;
+    transform: translate(8%, -25%);
+    z-index: -2;
+  }
+  .sofa_content:first-child{
+    margin: 8rem 0rem;
+    margin-left: 1rem;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    z-index: -3;
+  }
+
+  .sofa_content:first-child h3{
+    font-size: 80px;
+  }
+  .sofa_content:last-child{
+    color: #fff;
+    text-align: start;
+    width: 350px;
+    margin: 0rem 1rem;
+  }
+
+  .sofa_content:last-child h4{
+    margin: 2rem 0;
+    font-size: 25px;
+  }
+
+  .sofa_content:last-child h4:nth-child(2){
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+}
+
+
+@media(max-width: 820px){
+  .sofa_box{
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 35%;
+    margin-bottom: 15%;
+    z-index: 1;
+  }
+  .sofa_img{
+    position: absolute;
+    width: 600px;
+    transform: translate(8%, -40%);
+    z-index: -2;
+  }
+  .sofa_content:first-child{
+    margin: 8rem 0rem;
+    margin-left: 1rem;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    z-index: -3;
+  }
+
+  .sofa_content:first-child h3{
+    font-size: 80px;
+  }
+  .sofa_content:last-child{
+    color: #fff;
+    text-align: start;
+    width: 300px;
+    margin: 0rem 1rem;
+  }
+
+  .sofa_content:last-child h4{
+    margin: 2rem 0;
+    font-size: 25px;
+  }
+
+  .sofa_content:last-child h4:nth-child(2){
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+}
+
+
+
+
+@media(max-width: 720px){
+  .sofa_box{
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    margin-top: 35%;
+    margin-bottom: 15%;
+    z-index: 1;
+  }
+  .sofa_img{
+    position: absolute;
+    width: 580px;
+    transform: translate(0%, -40%);
+    z-index: -2;
+  }
+  .sofa_content:first-child{
+    margin: 2rem 0rem;
+    margin-left: 0rem;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: -3;
+    margin-top: 40%;
+  }
+
+  .sofa_content:first-child h3{
+    font-size: 60px;
+  }
+  .sofa_content:last-child{
+    color: #fff;
+    text-align: start;
+    width: 100%;
+    padding: 10px 30px;
+    margin: 0rem 0rem;
+    text-align: center;
+  }
+
+  .sofa_content:last-child h4{
+    margin: 1rem 0;
+    font-size: 25px;
+  }
+
+  .sofa_content:last-child h4:nth-child(2){
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .sofa_content button{
+    margin-bottom: 25px;
+  }
+
+}
+
+
+@media(max-width: 620px){
+  .sofa_box{
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    margin-top: 35%;
+    margin-bottom: 15%;
+    z-index: 1;
+  }
+  .sofa_img{
+    position: absolute;
+    width: 550px;
+    transform: translate(0%, -40%);
+    z-index: -2;
+  }
+  .sofa_content:first-child{
+    margin: 2rem 0rem;
+    margin-left: 0rem;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: -3;
+    margin-top: 50%;
+  }
+
+  .sofa_content:first-child h3{
+    font-size: 60px;
+  }
+  .sofa_content:last-child{
+    color: #fff;
+    text-align: start;
+    width: 100%;
+    padding: 10px 30px;
+    margin: 0rem 0rem;
+    text-align: center;
+  }
+
+  .sofa_content:last-child h4{
+    margin: 1rem 0;
+    font-size: 20px;
+  }
+
+  .sofa_content:last-child h4:nth-child(2){
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .sofa_content button{
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+}
+
+
+
+
+@media(max-width: 520px){
+  .sofa_box{
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    margin-top: 40%;
+    margin-bottom: 15%;
+    z-index: 1;
+  }
+  .sofa_img{
+    position: absolute;
+    width: 400px;
+    transform: translate(0%, -40%);
+    z-index: -2;
+  }
+  .sofa_content:first-child{
+    margin: 2rem 0rem;
+    margin-left: 0rem;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: -3;
+    margin-top: 50%;
+  }
+
+  .sofa_content:first-child h3{
+    font-size: 60px;
+  }
+  .sofa_content:last-child{
+    color: #fff;
+    text-align: start;
+    width: 100%;
+    padding: 10px 30px;
+    margin: 0rem 0rem;
+    text-align: center;
+  }
+
+  .sofa_content:last-child h4{
+    margin: 1rem 0;
+    font-size: 20px;
+  }
+
+  .sofa_content:last-child h4:nth-child(2){
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .sofa_content button{
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+}
+
+
+@media(max-width: 420px){
+  .sofa_box{
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    margin-top: 30%;
+    margin-bottom: 15%;
+    z-index: 1;
+  }
+  .sofa_img{
+    position: absolute;
+    width: 300px;
+    transform: translate(0%, -40%);
+    z-index: -2;
+  }
+  .sofa_content:first-child{
+    margin: 2rem 0rem;
+    margin-left: 0rem;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: -3;
+    margin-top: 30%;
+  }
+
+  .sofa_content:first-child h3{
+    font-size: 40px;
+  }
+  .sofa_content:last-child{
+    color: #fff;
+    text-align: start;
+    width: 100%;
+    padding: 10px 30px;
+    margin: 0rem 0rem;
+    text-align: center;
+  }
+
+  .sofa_content:last-child h4{
+    margin: 1rem 0;
+    font-size: 20px;
+  }
+
+  .sofa_content:last-child h4:nth-child(2){
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .sofa_content button{
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
 }
