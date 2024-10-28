@@ -1,0 +1,13 @@
+
+.sofa_box{
+  width: 100%;
+  background: linear-gradient(90turn,#332A4F, #625686);
+  border-radius: 25px;
+}
+
+
+.sofa_content{
+  display: flex;
+  justify-content: space-between;
+  
+}
