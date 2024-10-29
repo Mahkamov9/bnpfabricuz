@@ -1,0 +1,229 @@
+
+
+.contact_box{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 50px 0;
+}
+
+.contact_massages{
+  padding: 10px;
+  width: 500px;
+}
+
+.contact_massages h1{
+  margin: 2rem 0;
+  font-weight: 900;
+}
+
+.contact_massages form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 25px;
+}
+
+.contact_massages form input{
+  height: 40px;
+  background-color: #EFEFEF;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  padding-left: 25px;
+  max-width: 500px;
+}
+
+.contact_massages form textarea{
+  height: 80px;
+  max-height: 100px;
+  background-color: #EFEFEF;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  padding-left: 25px;
+  max-width: 500px;
+}
+
+.contact_massages form button{
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  background-color: #F42C37;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  padding-left: 25px;
+  max-width: 500px;
+}
+
+
+.contact_map{
+  width: 500px;
+  padding: 10px;
+  /* background-color: saddlebrown; */
+}
+
+.contact_map iframe{
+  width: 100%;
+  height: 400px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+
+.contact_content{
+  /* background-color: #398769; */
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+
+.contact_content div{
+  display: flex;
+  gap: 15px;
+  row-gap: 5px;
+}
+
+.contact_content div div{
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+
+
+
+@media(max-width: 1130px){
+  .container{
+    width: 1000px;
+  }
+  .contact_map{
+    width: 400px;
+    padding: 10px;
+  }
+}
+
+
+@media(max-width: 1020px){
+  .container{
+    width: 900px;
+  }
+  .contact_map{
+    width: 300px;
+    padding: 10px;
+  }
+}
+
+@media(max-width: 920px){
+  .container{
+    width: 800px;
+  }
+  .contact_map{
+    width: 300px;
+    padding: 10px;
+  }
+}
+
+@media(max-width: 820px){
+  .container{
+    width: 700px;
+  }
+  .contact_box{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_massages{
+    width: 100%;
+    max-width: 100%;
+  }
+  .contact_map{
+    width: 100%;
+    padding: 10px;
+  }
+  .contact_content{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+
+
+@media(max-width: 720px){
+  .container{
+    width: 600px;
+  }
+  .contact_box{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_massages{
+    width: 100%;
+    max-width: 100%;
+  }
+  .contact_map{
+    width: 100%;
+    padding: 10px;
+  }
+  .contact_content{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+
+
+@media(max-width: 620px){
+  .container{
+    width: 500px;
+  }
+  .contact_box{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_massages{
+    width: 100%;
+    max-width: 100%;
+  }
+  .contact_map{
+    width: 100%;
+    padding: 10px;
+  }
+  .contact_content{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+
+@media(max-width: 520px){
+  .container{
+    width: 400px;
+  }
+  .contact_box{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_massages{
+    width: 100%;
+    max-width: 100%;
+  }
+  .contact_map{
+    width: 100%;
+    padding: 10px;
+  }
+  .contact_content{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+}

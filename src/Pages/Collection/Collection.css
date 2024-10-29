@@ -1,0 +1,35 @@
+
+
+.collection_box{
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.collection_sidebar{
+  width: 30%;
+  height: 100vh;
+  background-color: aquamarine;
+}
+
+.collection_aside{
+  width: 70%;
+  background-color: aqua;
+}
+
+
+@media(max-width: 720px){
+  .collection_box{
+    display: flex;
+    flex-direction: column;
+  }
+  .collection_sidebar{
+    height: auto;
+    width: 100%;
+  }
+  .collection_aside{
+    width: 100%;
+  }
+}

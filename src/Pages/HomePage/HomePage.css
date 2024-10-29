@@ -54,10 +54,20 @@
 
 
 
+.homeCard_box{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+
 
 @media(max-width: 1420px){
   .container{
     width: 1300px;
+  }
+  .homeCard_box{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
   }
   .header_box_img{
     transform: translate(-10%, 11%);
@@ -115,6 +125,10 @@
 @media(max-width: 1220px){
   .container{
     width: 1100px;
+  }
+  .homeCard_box{
+    display: grid;
+    grid-template-columns: auto auto auto;
   }
   .label_box{
     margin: 50px 0;
@@ -228,6 +242,11 @@
   .container{
     width: 800px;
   }
+  .homeCard_box{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 40px;
+  }
   .header_box{
     max-height: 400px;
   }
@@ -260,6 +279,11 @@
   .container{
     width: 700px;
   }
+  .homeCard_box{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 25px;
+  }
   .header_box{
     max-height: 350px;
   }
@@ -291,6 +315,10 @@
 @media(max-width: 720px){
   .container{
     width: 600px;
+  }
+  .homeCard_box{
+    display: grid;
+    grid-template-columns: max-content max-content;
   }
   .label_box{
     margin: 50px 0;

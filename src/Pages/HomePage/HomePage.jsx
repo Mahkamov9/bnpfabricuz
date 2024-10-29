@@ -12,6 +12,9 @@ import Sofa from '../../Components/Sofa/Sofa';
 import SofaImg from "../../assets/Images/sofa.png";
 import SofaImg1 from "../../assets/Images/sofa1.png";
 import SofaImg2 from "../../assets/Images/sofa2.png";
+import Card from '../../Components/Cards/Card';
+import card_img4 from "../../assets/Images/cardimg4.jpg";
+
 
 
 export default function HomePage() {
@@ -47,11 +50,84 @@ export default function HomePage() {
         <div className="sofaSection">
           <div className="container">
             <Sofa  sofa_img={SofaImg1} sofaColor="linear-gradient(90turn, #373E53, #616884)" />
-            <Sofa  sofa_img={SofaImg} sofaColor="linear-gradient(90turn, #332A4F, #625686)" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="container">
+          <div style={{textAlign:"center", margin:"20px 0px", fontSize:"25px"}}>
+            <h1>{t("winter")}</h1>
+            <p style={{margin:"10px 0"}}>{t("sofatext2")}</p>
+          </div>
+          <div className="homeCard_box">
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="sofaSection">
+          <div className="container">
+            <Sofa  sofa_img={SofaImg1} sofaColor="linear-gradient(90turn, #373E53, #616884)" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="container">
+          <div style={{textAlign:"center", margin:"20px 0px", fontSize:"25px"}}>
+            <h1>{t("autom")}</h1>
+            <p style={{margin:"10px 0"}}>{t("sofatext2")}</p>
+          </div>
+          <div className="homeCard_box">
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="sofaSection">
+          <div className="container">
             <Sofa  sofa_img={SofaImg2} sofaColor="linear-gradient(90turn, #255957, #307E7A)" />
           </div>
         </div>
       </section>
+      <section>
+        <div className="container">
+          <div style={{textAlign:"center", margin:"20px 0px", fontSize:"25px"}}>
+            <h1>{t("summer")}</h1>
+            <p style={{margin:"10px 0"}}>{t("sofatext2")}</p>
+          </div>
+          <div className="homeCard_box">
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+            <Card card_img={card_img4} cardLink="Article"/>
+          </div>
+        </div>
+      </section>
+
     </>
   )
 }
