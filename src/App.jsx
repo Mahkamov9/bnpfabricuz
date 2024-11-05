@@ -6,6 +6,7 @@ import Footer from "./Components/Footer/Footer";
 import HomePage from "./Pages/HomePage/HomePage";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
+import Product from "./Pages/Product/Product";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path="/collection" element={<Collection/>} />
             <Route path="/about" element={<About/>}/>
             <Route path="/contact" element={<Contact/>}/>
+            <Route path="/product/:id" element={<Product />} />
           </Routes>
         <Footer/>
       </Router>

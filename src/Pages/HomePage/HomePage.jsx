@@ -14,6 +14,7 @@ import SofaImg1 from "../../assets/Images/sofa1.png";
 import SofaImg2 from "../../assets/Images/sofa2.png";
 import Card from '../../Components/Cards/Card';
 import card_img4 from "../../assets/Images/cardimg4.jpg";
+import Dataxon from '../../assets/data';
 
 
 
@@ -60,16 +61,9 @@ export default function HomePage() {
             <p style={{margin:"10px 0"}}>{t("sofatext2")}</p>
           </div>
           <div className="homeCard_box">
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
+          {Dataxon.map((item) => (
+          <Card key={item.id} id={item?.id} title={item?.title} card_img={item?.img}  cardLink="Article" />
+        ))}
           </div>
         </div>
       </section>

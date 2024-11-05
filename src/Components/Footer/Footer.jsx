@@ -16,21 +16,21 @@ export default function Footer() {
               <h4>“Bukhara Natural Product” koʻp yillardan buyon butun dunyoda foydalanish uchun paxta matolari ishlab chiqaradigan kompaniya hisoblanadi.</h4>
             </div>
             <div className='footer_item'>
-              <Link className='footer_link  footerHead_link'>Menyu</Link>
-              <Link className='footer_link'>Commit</Link>
-              <Link className='footer_link'>Commit</Link>
-              <Link className='footer_link'>Commit</Link>
-              <Link className='footer_link'>Commit</Link>
+              <Link className='footer_link  footerHead_link'>Sayt xaritasi</Link>
+              <Link className='footer_link'>Uy</Link>
+              <Link className='footer_link'>Biz haqimizda</Link>
+              <Link className='footer_link'>To'plam</Link>
+              <Link className='footer_link'>Kontaktlar</Link>
             </div>
             <div className='footer_item'>
-              <Link className='footer_link  footerHead_link'>Menyu</Link>
-              <Link className='footer_link'>Commit</Link>
-              <Link className='footer_link'>Commit</Link>
-              <Link className='footer_link'>Commit</Link>
-              <Link className='footer_link'>Commit</Link>
+              <Link className='footer_link  footerHead_link'>Aloqa</Link>
+              <Link className='footer_link'>Buxoro, st. Alpomish 80.</Link>
+              <Link className='footer_link'>Bnpuz@bk.ru</Link>
+              <Link className='footer_link'>nfo@bnpfabric.com</Link>
+              <Link className='footer_link'>+998 93 191 97 37</Link>
             </div>
             <div className='footer_item'>
-              <Link className='footer_link footerHead_link'>Menyu</Link>
+              <Link className='footer_link footerHead_link'>Murojat uchun:</Link>
               <div className="footerInput_box">
                 <input className='footer_input' type="text" placeholder='examle@gmail.com' />
                 <IoMailOpen className='footerInput_icon' />

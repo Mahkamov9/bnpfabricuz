@@ -1,14 +1,15 @@
 import React from 'react'
 import "./Card.css";
+import { Link } from 'react-router-dom';
 
 
 export default function Card(props) {
   return (
     <>
-      <div className="card">
-          <img src={props.card_img} alt="Mahkamov"/>
-          <h2>{props.cardLink}</h2>
-      </div>
+      <Link to={`/product/${props?.id}`} className="card">
+      <img src={props.card_img} alt="Mahkamov"/>
+          <h2>{props.title}</h2>
+      </Link>
     </>
   )
 }
