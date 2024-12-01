@@ -3,12 +3,10 @@ import SofaImg1 from "../assets/Images/sofa1.png";
 import SofaImg2 from "../assets/Images/sofa2.png";
 
 
-// import { useTranslation } from 'react-i18next';
-// const { t, i18n } = useTranslation();
-const Dataxon = [
+const CardData = [
   {
     "id": 1,
-    "title": "product",
+    "title": "Birinchi bol oldinga intil",
     "category": "Texnologiya",
     "img": SofaImg,
     "text":"salomlar 1-producttttttttttttttttttttttttttttttttttttttttttttttttt"
@@ -30,4 +28,4 @@ const Dataxon = [
 
   }
 ]
-export default Dataxon
+export default CardData

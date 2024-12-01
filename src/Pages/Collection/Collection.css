@@ -1,12 +1,8 @@
-
-
 .collection_box{
   margin: 2rem 0;
   display: flex;
   justify-content: space-between;
 }
-
-
 
 .collection_sidebar{
   width: 30%;
@@ -19,6 +15,20 @@
   background-color: aqua;
 }
 
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.categories button {
+  transition: all 0.3s ease;
+}
+
+.categories button:hover {
+  background-color: #f3f4f6;
+}
 
 @media(max-width: 720px){
   .collection_box{
@@ -31,5 +41,12 @@
   }
   .collection_aside{
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
   }
 }

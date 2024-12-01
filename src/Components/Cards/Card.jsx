@@ -1,15 +1,17 @@
 import React from 'react'
 import "./Card.css";
 import { Link } from 'react-router-dom';
+import CardData from "../../assets/data"
 
-
-export default function Card(props) {
+export default function Card() {
   return (
     <>
-      <Link to={`/product/${props?.id}`} className="card">
-      <img src={props.card_img} alt="Mahkamov"/>
-          <h2>{props.title}</h2>
-      </Link>
+      {CardData.map((item) => (
+        <Link key={item.id} to={`/collection/${item.id}`} className="card">
+          <img src={item.img} alt={item.title}/>
+          <h2>{item.title}</h2>
+        </Link>
+      ))}
     </>
   )
 }
