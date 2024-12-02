@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./Navbar.css";
 import { Link } from 'react-router-dom';
-import Logo from "../../assets/Images/bnp_logo.png";
+import Logo from "../../assets/Images/namimpeks.png";
 import { RiMenu3Fill } from "react-icons/ri";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { useTranslation } from 'react-i18next';
@@ -31,7 +31,7 @@ export default function Navbar() {
       <nav className='navbar'>
         <div className="container nav_box">
           <div className='navbar_logo'>
-            <Link to="/" ><img src={Logo} alt="logo" /></Link>
+            <Link to="/" ><img  className='navbar_logo_img' src={Logo} alt="logo" /></Link>
           </div>
           <ul className="nav_links">
             <li><Link to="/" className={`nav_link ${activePage === "home" ? "active" : ""}`} onClick={() => handleClick("home")} >{t("home")}</Link></li>

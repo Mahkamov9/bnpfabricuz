@@ -14,8 +14,8 @@
 
 .sofa_img{
   position: absolute;
-  width: 1000px;
-  transform: translate(15%, 0%);
+  width: 600px;
+  transform: translate(55%, 0%);
 }
 
 .sofa_content:first-child{
@@ -53,7 +53,7 @@
   background-color: #fff;
   border-radius: 25px;
   padding: 15px 30px;
-  color: #332A4F;
+  color: #4f382a;
   font-weight: 700;
   border: none;
   outline: none;
@@ -425,7 +425,7 @@
   .sofa_img{
     position: absolute;
     width: 300px;
-    transform: translate(0%, -40%);
+    transform: translate(0%, -60%);
     z-index: -2;
   }
   .sofa_content:first-child{

@@ -78,19 +78,25 @@
   /* background-color: #398769; */
   display: flex;
   justify-content: space-around;
+  align-items: flex-start;
   margin: 50px 0;
 }
 
 .contact_content div{
   display: flex;
   gap: 15px;
+  font-size: 35px;
+  color: #F42C37;
+  align-items: center;
   row-gap: 5px;
 }
+
 
 .contact_content div div{
   display: flex;
   flex-direction: column;
   font-weight: 600;
+  font-size: 18px;
 }
 
 
@@ -172,7 +178,7 @@
   .contact_content{
     display: flex;
     gap: 20px;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
   }
 }
@@ -198,7 +204,7 @@
   .contact_content{
     display: flex;
     gap: 20px;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
   }
 }
@@ -223,7 +229,7 @@
   .contact_content{
     display: flex;
     gap: 20px;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
   }
 }

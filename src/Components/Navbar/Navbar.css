@@ -4,14 +4,15 @@
   position: relative;
 }
 
-/* .nav_box{
+.nav_box{
   display: flex;
+  align-items: center;
   justify-content: space-between;
-} */
+}
 
 .navbar_logo img{
-  width: 147px;
-  height: 37px;
+  width: 97px;
+  height: 97px;
 }
 
 

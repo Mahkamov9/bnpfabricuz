@@ -1,25 +1,17 @@
 import React from 'react'
 import './HomePage.css';
-import headerSofa from "../../assets/Images/headerSofa.png";
+import headerSofa from "../../assets/Images/imgtowel.png";
 import { useTranslation } from 'react-i18next';
 import Label from '../../Components/Label/Label';
-
-import Delivery from "../../assets/Images/noun_delivery.svg";
-import Delivery2 from "../../assets/Images/noun_guarantee.svg";
-import Delivery3 from "../../assets/Images/Group-995.svg";
-import Delivery4 from "../../assets/Images/noun_Wallet_745515.svg";
-import Sofa from '../../Components/Sofa/Sofa';
-import SofaImg from "../../assets/Images/sofa.png";
-import SofaImg1 from "../../assets/Images/sofa1.png";
-import SofaImg2 from "../../assets/Images/sofa2.png";
 import Card from '../../Components/Cards/Card';
-import card_img4 from "../../assets/Images/cardimg4.jpg";
-import Dataxon from '../../assets/data';
-
-
+// Images
+import Sofa from '../../Components/Sofa/Sofa';
+import SofaImg1 from "../../assets/Images/aaaa-removebg-preview.png";
+import SofaImg4 from "../../assets/Images/clothimg.png";
+import SofaImg2 from "../../assets/Images/images-removebg-preview.png";
+import Contact from '../Contact/Contact';
 
 export default function HomePage() {
-
   const { t, i18n } = useTranslation()
   return (
     <>
@@ -37,90 +29,71 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section>
+      <section className='label_section'>
         <div className="container">
           <div className="label_box">
-            <Label img={Delivery} title={t("label1-1")} subtext={t("label1-2")} />
-            <Label img={Delivery2} title={t("label2-1")} subtext={t("label2-2")} />
-            <Label img={Delivery3} title={t("label2-1")} subtext={t("label2-2")} />
-            <Label img={Delivery4} title={t("label2-1")} subtext={t("label2-2")} />
+            <Label title={t("label1-1")} />
+            <Label title={t("label2-1")} />
+            <Label title={t("label3-1")} />
+            <Label title={t("label4-1")} />
           </div>
         </div>
       </section>
       <section>
         <div className="sofaSection">
           <div className="container">
-            <Sofa  sofa_img={SofaImg1} sofaColor="linear-gradient(90turn, #373E53, #616884)" />
+            <Sofa sofa_img={SofaImg1} sofaColor="#ba0000" />
           </div>
         </div>
       </section>
       <section>
         <div className="container">
-          <div style={{textAlign:"center", margin:"20px 0px", fontSize:"25px"}}>
+          <div style={{ textAlign: "center", margin: "20px 0px", fontSize: "25px" }}>
             <h1>{t("winter")}</h1>
-            <p style={{margin:"10px 0"}}>{t("sofatext2")}</p>
+            <p style={{ margin: "10px 0" }}>{t("sofatext2")}</p>
           </div>
           <div className="homeCard_box">
-          {Dataxon.map((item) => (
-          <Card key={item.id} id={item?.id} title={item?.title} card_img={item?.img}  cardLink="Article" />
-        ))}
+            <Card />
           </div>
         </div>
       </section>
       <section>
         <div className="sofaSection">
           <div className="container">
-            <Sofa  sofa_img={SofaImg1} sofaColor="linear-gradient(90turn, #373E53, #616884)" />
+            <Sofa sofa_img={SofaImg4} sofaColor="#BA0000" />
           </div>
         </div>
       </section>
       <section>
         <div className="container">
-          <div style={{textAlign:"center", margin:"20px 0px", fontSize:"25px"}}>
+          <div style={{ textAlign: "center", margin: "20px 0px", fontSize: "25px" }}>
             <h1>{t("autom")}</h1>
-            <p style={{margin:"10px 0"}}>{t("sofatext2")}</p>
+            <p style={{ margin: "10px 0" }}>{t("sofatext2")}</p>
           </div>
           <div className="homeCard_box">
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
+            <Card />
           </div>
         </div>
       </section>
       <section>
         <div className="sofaSection">
           <div className="container">
-            <Sofa  sofa_img={SofaImg2} sofaColor="linear-gradient(90turn, #255957, #307E7A)" />
+            <Sofa sofa_img={SofaImg2} sofaColor="#ba0000" />
           </div>
         </div>
       </section>
       <section>
         <div className="container">
-          <div style={{textAlign:"center", margin:"20px 0px", fontSize:"25px"}}>
+          <div style={{ textAlign: "center", margin: "20px 0px", fontSize: "25px" }}>
             <h1>{t("summer")}</h1>
-            <p style={{margin:"10px 0"}}>{t("sofatext2")}</p>
+            <p style={{ margin: "10px 0" }}>{t("sofatext2")}</p>
           </div>
           <div className="homeCard_box">
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
-            <Card card_img={card_img4} cardLink="Article"/>
+            <Card/>
           </div>
         </div>
       </section>
+      <Contact/>
 
     </>
   )

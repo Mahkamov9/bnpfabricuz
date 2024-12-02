@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Footer.css"
 
-import Logo from "../../assets/Images/bnp_logo.png"
+import Logo from "../../assets/Images/namimpeks.png"
 import { Link } from 'react-router-dom'
 import { IoMailOpen } from "react-icons/io5";
 
@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="footer_list">
             <div className='footer_item'>
               <img className='footer_logo' src={Logo} alt="Logo" />
-              <h4>“Bukhara Natural Product” koʻp yillardan buyon butun dunyoda foydalanish uchun paxta matolari ishlab chiqaradigan kompaniya hisoblanadi.</h4>
+              <h4>“Nam Impeks” ishlab chiqarish kompaniyasi koʻp yillardan buyonn faoliyat yuritib keladi va xalqimiz sevimli brendiga aylanib ulgurgan.</h4>
             </div>
             <div className='footer_item'>
               <Link className='footer_link  footerHead_link'>Sayt xaritasi</Link>
@@ -24,15 +24,15 @@ export default function Footer() {
             </div>
             <div className='footer_item'>
               <Link className='footer_link  footerHead_link'>Aloqa</Link>
-              <Link className='footer_link'>Buxoro, st. Alpomish 80.</Link>
-              <Link className='footer_link'>Bnpuz@bk.ru</Link>
-              <Link className='footer_link'>nfo@bnpfabric.com</Link>
-              <Link className='footer_link'>+998 93 191 97 37</Link>
+              <Link className='footer_link'>S. Raximov koʻchasi, 18, Namangan</Link>
+              <Link className='footer_link'>namimpeks.uz</Link>
+              <Link className='footer_link'>infonamimpeks@gmail.com</Link>
+              <Link className='footer_link'>+998 94 171 61 70</Link>
             </div>
             <div className='footer_item'>
               <Link className='footer_link footerHead_link'>Murojat uchun:</Link>
               <div className="footerInput_box">
-                <input className='footer_input' type="text" placeholder='examle@gmail.com' />
+                <input className='footer_input' type="text" placeholder='infonamimpeks@gmail.com' />
                 <IoMailOpen className='footerInput_icon' />
               </div>
             </div>
@@ -40,7 +40,7 @@ export default function Footer() {
         </div>
         <div className="footer_bottom">
           <div className="container">
-            <h3>© 2024 MChJ "BUXORA NATURAL PRODUCT". Barcha huquqlar himoyalangan. | Mahkamov</h3>
+            <h3>© 2024 MChJ "NamImpeks" Barcha huquqlar himoyalangan.   <a href="mahkamov.uz">Mahkamov|Dev</a> </h3>
           </div>
         </div>
       </footer>

@@ -17,6 +17,9 @@
 }
 
 
+.label_icon{
+  color: #BA0001;
+}
 
 @media(max-width: 1020px){
   .homeLabel{
